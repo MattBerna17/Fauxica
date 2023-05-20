@@ -21,6 +21,7 @@ class Product:
     description: str
     available: int
     rating: float
+    url: str
     
     def setFromJSON(self, file: dict):
         """
@@ -35,6 +36,7 @@ class Product:
         self.description = file['description']
         self.available = file['available']
         self.rating = file['rating']
+        self.url = file['url']
 
 
 def retrieveFromDB():
