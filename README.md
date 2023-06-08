@@ -29,7 +29,7 @@ To run the project you need the following:
 ## Installation
 Now you can clone my repository
 ```
-git clone https://github.com/mattberna17/fauxica.git
+git clone https://github.com/MattBerna17/Fauxica.git
 ```
 
 To set up the database, start the mongod service and run the following commands:
