@@ -1,0 +1,73 @@
+<!-- The idea is to look at the elements as squares, and work that way -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="./images/fauxica.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <title>Fauxica E-Shop</title>
+</head>
+<body>
+    <!-- create a wrapper to wrap the page: the main square that contains all the elements of the page -->
+    
+    <div class="wrapper">
+        <!-- the header of the page, contains the "northest" part of the page: the logo and the navbar -->
+        <header>
+            <!-- the logo should be clickable, so it has to be an a element that brings you to a specific page -->
+            <!-- the # sign says that nothing happens -->
+            <!-- the logo might be an svg file, so we have to add it -->
+            <a href="index.html"><img src="./images/logo.svg" alt="Fauxica Logo"></a>
+
+            <!-- now we have the nav bar -->
+            <nav>
+                <!-- the nav bar is composed by an unordered list -->
+                <!-- we use the active class to indicate the page you're on right now -->
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="pages/products.html">Products</a></li>
+                    <li><a href="pages/account.html">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="msg-box error-msg none">
+            <span class="err-msg"></span>
+            <div class="close-btn">
+                <span class="close" id="error-close">X</span>
+            </div>
+        </div>
+        <!-- now we need a wrapper for the body of the actual content (main or section) -->
+        <main>
+            <!-- we have to divide the content in two columns -->
+            <div class="left-col">
+                <h1>Everything you need at the tip of your fingers</h1>
+                <p class="subhead">
+                    Take a look at our products and choose your wear based on how you feel!
+                </p>
+                <!-- we can implement the buttons as simple references with the a tag and a colored bg -->
+                <div class="btns">
+                    <a href="pages/products.html" class="primary-btn">Browse the products</a>
+                    <a href="pages/products.html" class="secondary-btn">Spring '23 collection --></a>
+                </div>
+                <div class="news">
+                    <p class="employees">50K</p>
+                    <p class="details">We hired over 50,000 employees in the last year!</p>
+                </div>
+            </div>
+            <div class="right-col">
+                <!-- we implement subclasses for the cards, and in css put the background as the image, so in html the element only contains the name (clickable) and the price -->
+            </div>
+        </main>
+    </div>
+</body>
+</html>

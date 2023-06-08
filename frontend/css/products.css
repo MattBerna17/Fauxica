@@ -1,0 +1,245 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header of the page */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+input {
+    border-radius: 0.8em;
+    padding: .2em;
+    padding-left: .8em;
+    color: black;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    width: 50%;
+    align-items: center;
+}
+
+.search-container {
+    margin-left: 4em;
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+}
+
+.search {
+    align-items: center;
+    margin: auto;
+    height: 75%;
+    width: 75%;
+    transform: scaleX(-1);
+    transition: 150ms;
+}
+
+.search:hover {
+    cursor: pointer;
+    height: 3em;
+    width: 3em;
+}
+
+nav {
+    margin: 4em;
+    margin-right: 0em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid grey;
+    bottom: -6px;
+    transition: width .3s;
+}
+
+
+
+
+
+
+
+/* hero section */
+
+.err-msg {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg-box {
+    display: flex;
+    grid-area: top;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-msg {
+    background-color: #ffb5b5;
+}
+
+.close-btn {
+    display: block;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .4em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    cursor: pointer;
+    background-color: rgb(138, 0, 0);
+    padding: auto; /* make a square */
+}
+
+.close {
+    font-weight: bold;
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: rgb(102, 0, 0);
+}
+
+.error {
+    background-color: #ffb5b5;
+}
+
+.no-result-msg {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.no-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.none {
+    display: none;
+}
+
+main {
+    margin-top: 3em;
+    margin-bottom: 11em;
+}
+
+.products-grid {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". . . ."
+    ;
+    grid-auto-rows: 500px;
+}
+
+.card {
+    flex: 1 1 0;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0.8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 800ms;
+}
+
+
+.card-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.6em;
+    width: 100%;
+    padding: 2em;
+    transition: transform 800ms;
+}
+
+.product-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+p.product-price {
+    font-size: 1.8rem;
+}
+
+
+
+
+/* animations */
+nav ul li a:hover::before {
+    width: 35%;
+}
+
+.primary-btn:hover {
+    background: #E2D1BD;
+}
+
+
+
+.card:hover .card-details {
+    transform: translateY(-20px);
+}

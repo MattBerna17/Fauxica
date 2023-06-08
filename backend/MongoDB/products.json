@@ -1,0 +1,110 @@
+[
+    {
+        "_id": "Prod1",
+        "name": "Fauxica Running Shoes",
+        "price": 29.99,
+        "description": "Running shoes perfect for professional and amateur running enthusiasts",
+        "available": 500,
+        "rating": 9.2,
+        "url": "https://hips.hearstapps.com/hmg-prod/images/woman-jogging-on-country-road-royalty-free-image-1676306479.jpg?crop=1.00xw:0.753xh;0,0.0624xh&resize=640:*"
+    }, 
+    {
+        "_id": "Prod2",
+        "name": "Scarf",
+        "price": 9.99,
+        "description": "A perfect scarf to keep you away from the freezing-cold winter season", 
+        "available": 78,
+        "rating": 7.8,
+        "url": "https://etmo.lv/wp-content/uploads/2022/11/IMG-0621-1.jpg"
+    },
+    {
+        "_id": "Prod3",
+        "name": "Nike Air Force One",
+        "price": 69.99,
+        "description": "Perfect shoes for everyday occasions",
+        "available": 90,
+        "rating": 9.9,
+        "url": "https://static.nike.com/a/videos/so_2.25/d58e9afa-e042-497c-917d-d625c432b72b/scarpa-air-force-1-07-GjGXSP.jpg"
+    },
+    {
+        "_id": "Prod4",
+        "name": "Fauxica Pullover",
+        "price": 54.99,
+        "description": "A pullover to wear during in autumn, winter and spring",
+        "available": 35,
+        "rating": 3.9,
+        "url": "https://www.conbipel.com/on/demandware.static/-/Sites-conbipel_master/default/dw81568b8a/images/13281282_01.jpg"
+    },
+    {
+        "_id": "Prod5",
+        "name": "Converse All Stars",
+        "price": 59.99,
+        "description": "Comfortable shoes that grant you both freedom and durability",
+        "available": 78,
+        "rating": 8.6,
+        "url": "https://images.tcdn.com.br/img/img_prod/755316/all_star_flat_cano_alto_23_1_20220208031750.jpeg"
+    },
+    {
+        "_id": "Prod6",
+        "name": "Octopus Hoodie",
+        "price": 85.00,
+        "description": "Hoodie with a unique and colorful design",
+        "available": 12,
+        "rating": 9.3,
+        "url": "https://data.youthsrl.com/images/galleries/12337/22WOSH100-WATERCOLOR-01.jpg"
+    },
+    {
+        "_id": "Prod7",
+        "name": "Bad Shoes",
+        "price": 10.00,
+        "description": "Some bad shoes that at least cost a little bit less than the others",
+        "available": 100,
+        "rating": 1.0,
+        "url": "https://imgix.bustle.com/uploads/image/2022/5/10/11d21c06-fb28-401c-bc4a-6db73793189f-balenciaga-paris-sneakers_3.webp?w=450&h=300&fit=crop&crop=faces&auto=format%2Ccompress"
+    },
+    {
+        "_id": "Prod8",
+        "name": "Fauxica T-Shirt",
+        "price": 10.00,
+        "description": "Elegant t-shirt that fits every situation",
+        "available": 200,
+        "rating": 7.3,
+        "url": "https://cdn.shopify.com/s/files/1/0293/9627/1197/products/T-shirt-uomo-cotone-rigenato-5.jpg?v=1652356097"
+    },
+    {
+        "_id": "Prod9",
+        "name": "Carhartt Hat",
+        "price": 40.00,
+        "description": "A beanie hat that keeps you away from cold evenings and mornings",
+        "available": 10,
+        "rating": 8.9,
+        "url": "https://metroconceptstore.com/34298-large_default/carhartt-wip-acrylic-watch-hat-beanie-cappellino-lana-hamilton-brown-carhartt-wip.jpg"
+    },
+    {
+        "_id": "Prod10",
+        "name": "Fauxica Gloves",
+        "price": 10.00,
+        "description": "Gloves to help you keep your hands warm in the cold days",
+        "available": 20,
+        "rating": 6.0,
+        "url": "https://cdn.shopify.com/s/files/1/0140/5930/7066/products/Screen_Shot_2019-01-29_at_10.23.11_am_grande.png?v=1658902123"
+    },
+    {
+        "_id": "Prod11",
+        "name": "Vans Classic",
+        "price": 59.99,
+        "description": "The skaters go-to shoes to get the best out of you",
+        "available": 30,
+        "rating": 9.3,
+        "url": "https://images.asos-media.com/products/vans-classic-old-skool-sneakers-nere-e-bianche/24138122-1-black?$n_640w$&wid=513&fit=constrain"
+    },
+    {
+        "_id": "Prod12",
+        "name": "Tony Hawks Skateboard",
+        "price": 1000.00,
+        "description": "The exact skate that Tony Hawk used in his final performance",
+        "available": 1,
+        "rating": null,
+        "url": "https://www.impactsurf.com/images/thumbs/003/0031835_tony-hawk-ss-360-skateboard-775-toxic-multi_870.jpeg"
+    }
+]

@@ -1,0 +1,19 @@
+[{
+  "_id": "User1",
+  "username": "mattberna17",
+  "password": "pwd",
+  "email": "email.di.prova@gmail.com",
+  "card": "CreditCard4"
+},{
+  "_id": "User2",
+  "username": "pippo_prova",
+  "password": "securePwd",
+  "email": "email.di.prova1@gmail.com",
+  "card": "CreditCard2"
+},{
+  "_id": "User3",
+  "username": "newusername",
+  "password": "prova",
+  "email": "email.di.prova@gmail.com",
+  "card": "CreditCard2"
+}]

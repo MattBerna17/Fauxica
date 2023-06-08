@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "CreditCard1",
+        "number": "12345",
+        "month": "2025-04",
+        "cvv": "12345",
+        "credit": 150000.00
+    }, 
+    {
+        "_id": "CreditCard2",
+        "number": "2345",
+        "month": "2026-12",
+        "cvv": "98765",
+        "credit": 90000.00
+    }, 
+    {
+        "_id": "CreditCard3",
+        "number": "9876",
+        "month": "2024-01",
+        "cvv": "13579",
+        "credit": 2000.00
+    }, 
+    {
+        "_id": "CreditCard4",
+        "number": "4567",
+        "month": "2027-10",
+        "cvv": "24680",
+        "credit": 135.00
+    }
+]

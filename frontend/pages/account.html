@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="../images/fauxica.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>Fauxica E-Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="../index.html"><img src="../images/fauxica.svg" alt="Fauxica Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./account.html" class="active">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Error and confirmation messages -->
+            <div class="msg-box error-msg none">
+                <span class="err-msg"></span>
+                <div class="close-btn">
+                    <span class="close" id="error-close">X</span>
+                </div>
+            </div>
+            <div class="msg-box confirmation-msg none">
+                <span class="conf-msg"></span>
+                <div class="close-btn">
+                    <span class="close" id="confirmation-close">X</span>
+                </div>
+            </div>
+
+
+            <!-- NavBar to change between login and register screen -->
+            <nav>
+                <ul class="navbar-account">
+                    <li><a class="msg active" id="login-li">Login</a></li>
+                    <li><a class="msg" id="register-li">Register</a></li>
+                    <li><a class="msg not-available" id="modify-li">Modify Profile</a></li>
+                </ul>
+            </nav>
+            
+            
+            <!-- ACCOUNT SCREENS -->
+            <!-- Login screen -->
+            <div class="login-screen">
+                <form action="#" method="post" class="form-account" id="login-form">
+                    <div class="user-info">
+                        <i class="fa fa-user fa-5x user-icon"></i>
+                        <span class="title-input">User Infos</span>
+                        <input type="text" class="user-input" id="username" name="username" placeholder="Username">
+                        <input type="password" class="user-input" id="password" name="password" placeholder="Password">
+                        <input type="email" class="user-input" id="email" name="email" placeholder="Email">
+                    </div>
+                </form>
+                <div class="footer">
+                    <div class="login-button">
+                        <span>Login</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register screen -->
+            <div class="register-screen none">
+                <form action="#" method="post" class="form-account"  id="register-form">
+                    <div class="user-info">
+                        <i class="fa fa-user fa-5x user-icon"></i>
+                        <span class="title-input">User Infos</span>
+                        <input type="text" class="user-input" id="username" name="username" placeholder="Username">
+                        <input type="password" class="user-input" id="password" name="password" placeholder="Password">
+                        <input type="email" class="user-input" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="credit-card-info">
+                        <i class="fa fa-5x fa-credit-card cc-icon"></i>
+                        <span class="title-input title-input-cc">Credit Card Infos</span>
+                        <input type="number" class="cc-input" id="card_number"  name="card_number"  placeholder="Card number">
+                        <input type="month" class="cc-input" id="month" name="month" placeholder="Month">
+                        <input type="number" class="cc-input" id="cvv" name="cvv"  placeholder="CVV">
+                    </div>
+                </form>
+                <div class="footer">
+                    <div class="register-button">
+                        <span>Register</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modify screen -->
+            <div class="modify-screen none">
+                <form action="#" method="post" class="form-account"  id="modify-form">
+                    <div class="user-info">
+                        <i class="fa fa-user fa-5x user-icon"></i>
+                        <span class="title-input">User Infos</span>
+                        <input type="text" class="user-input" id="username" name="username" placeholder="Username">
+                        <input type="password" class="user-input" id="password" name="password" placeholder="Password">
+                        <input type="email" class="user-input" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="credit-card-info">
+                        <i class="fa fa-5x fa-credit-card cc-icon"></i>
+                        <span class="title-input title-input-cc">Credit Card Infos</span>
+                        <input type="number" class="cc-input" id="card_number"  name="card_number"  placeholder="Card number">
+                        <input type="month" class="cc-input" id="month" name="month" placeholder="Month">
+                        <input type="number" class="cc-input" id="cvv" name="cvv"  placeholder="CVV">
+                    </div>
+                </form>
+                <div class="footer">
+                    <div class="save-changes-button">
+                        <span>Save changes</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

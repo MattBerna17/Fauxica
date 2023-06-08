@@ -1,0 +1,296 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header of the page */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    margin: 4em;
+    margin-right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid grey;
+    bottom: -6px;
+    transition: width .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hero section */
+
+main {
+    margin-top: 0em;
+    margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+
+/* confirmation and error messages */
+.err-msg .conf-msg {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg-box {
+    display: flex;
+    grid-area: top;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-msg {
+    background-color: #ffb5b5;
+}
+
+.confirmation-msg {
+    background-color: rgb(183, 255, 164);
+}
+
+.close-btn {
+    display: block;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .4em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    cursor: pointer;
+    background-color: rgb(138, 0, 0);
+    padding: auto; /* make a square */
+}
+
+.close {
+    font-weight: bold;
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: rgb(102, 0, 0);
+}
+
+.none {
+    display: none;
+}
+
+.error {
+    background-color: #ffb5b5;
+}
+
+
+
+
+
+
+
+
+/* navbar with the different account screens */
+.navbar-account {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+    border: #F1E2D1 1px;
+}
+
+.msg {
+    display: flex;
+    grid-area: top;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: .3em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg.active::before {
+    border-bottom: 2px solid #93bff1;
+    width: 100%;
+}
+
+.msg::before {
+    border-bottom: 2px solid #e996bc;
+}
+
+.msg {
+    cursor: pointer;
+}
+
+.msg.not-available {
+    color: grey;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* screens */
+.form-account {
+    margin-top: 7em;
+    grid-area: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0em;
+}
+
+.user-info, .credit-card-info {
+    flex: 1;
+    display: grid;
+    grid-template-rows: auto;
+    gap: .5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon, .cc-icon {
+    width: 100%;
+    text-align: center;
+}
+.title-input {
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+input {
+    border-radius: 0.4em;
+    padding: .2em;
+    padding-left: .8em;
+    color: black;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+}
+
+.user-input, .cc-input {
+    width: 95%;
+}
+
+
+
+
+
+
+
+/* footer with the buttons */
+.footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button, .save-changes-button, .register-button {
+    display: flex;
+    margin-top: 4em;
+    padding: 1em 2em;
+    width: 15%;
+    font-size: 1.8rem;
+    background-color: #F1E2D1;
+    border-radius: 1.9em;
+    border: 1em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-button:hover, .save-changes-button:hover, .register-button:hover {
+    background-color: #E2D1BD;
+}
+
+.login-button, .save-changes-button, .register-button span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* animations */
+nav ul li a:hover::before {
+    width: 35%;
+}
+
+.msg:hover::before {
+    width: 100%;
+}

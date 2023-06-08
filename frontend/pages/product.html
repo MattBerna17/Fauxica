@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="../images/fauxica.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/product.js"></script>
+    <title>Fauxica E-Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="../index.html"><img src="../images/fauxica.svg" alt="Fauxica Logo"></a>
+            <div class="search-container">
+                <img src="../images/search.svg" alt="Search" class="search">
+            </div>
+            <input type="text" name="search" id="search" placeholder="Search a product..." >
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./products.html" class="active">Products</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Error and confirmation banners -->
+            <div class="msg-box error-msg none">
+                <span class="err-msg"></span>
+                <div class="close-btn">
+                    <span class="close" id="error-close">X</span>
+                </div>
+            </div>
+            <div class="msg-box confirmation-msg none">
+                <span class="conf-msg"></span>
+                <div class="close-btn">
+                    <span class="close" id="confirmation-close">X</span>
+                </div>
+            </div>
+            
+            <div class="loading">
+                <span class="loading-msg">Loading of the product...</span>
+            </div>
+
+            <div class="product-page none">
+                <div class="product-details">
+                    <div class="left-col">
+                        
+                    </div>
+                    <div class="right-col">
+                        <div class="product-infos">
+                            <span class="name"></span>
+                            <hr>
+                            <div class="infos">
+                                <span class="none" id="prod-id"></span>
+                                <span class="availability"></span>
+                                <span class="description"></span>
+                                <span class="price"></span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <input type="number" name="number" id="number" class="choose-number" min="1" value="1">
+                            <div class="buy-btn">
+                                <span>Buy now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="suggested-text">Suggested products:</span>
+                <div class="suggested">
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

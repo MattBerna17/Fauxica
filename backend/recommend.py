@@ -36,7 +36,6 @@ class Product:
         self.description = file['description']
         self.available = file['available']
         self.rating = file['rating']
-        self.url = file['url']
 
 
 def retrieveFromDB():

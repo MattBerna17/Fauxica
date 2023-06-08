@@ -1,0 +1,333 @@
+html {
+    font-size: 62.5%;   /* the font is now 10px, since the root font of the browser is 16px by default */
+}
+
+body {
+    font-family: 'Poppins';     /* set the font family to the tuple of most common fonts used */
+    margin: 0;                  /* remove the space between the text and the borders of the window */
+}
+
+.wrapper {
+    max-width: 1200px;          /* the wrapper can only be of max length 1200px (standard) */
+    margin: 0 auto;             /* no margin on top and bottom, but auto for left and right places it in the middle of the page */
+}
+
+header {
+    /* in header, there are an a element and a nav element */
+    display: flex; /* it places the elements of the header in columns */
+    justify-content: space-between; /* in the display flex, puts the elements at the left at the start edge of the container, and the ones at the right at the very end of the container, keeping the same distance between them.
+    There is no space from the start and the end of the  container */
+    align-items: center; /* aligns the items in the header at the center of the y axis of the header space */
+}
+
+nav {
+    margin: 4em;
+    margin-right: 0;
+}
+
+nav ul {
+    list-style-type: none; /* to remove the dots of the unordered list */
+    display: flex; /* to put them in columns not rows */
+    gap: 4.1em; /* to space between the elements of the unordered list */
+    margin: 0; /* because the browser, by default, sets a bit of margin in the ul style */
+}
+
+nav ul li a {
+    text-decoration: none; /* remove the underline */
+    color: black; /* make the text black */
+    text-transform: uppercase; /* put the font in uppercase */
+    font-size: 1.6rem; /* font is 16px, so 1.6*62.5*16. rem is for font and em is for borders, margins, etc... */
+    position: relative; /* to make the active element refer to the absolute of the nav ul li a elements' position */
+    /* position can be: static (they appear in the same order of the html declarations), relative (like static but lets you change the position to right, left, top and bottom), absolute (doesn't follow the parent's order, so is absolute in respect of the whole page),  */
+}
+
+nav ul li a.active::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(126, 126, 126);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+
+
+
+
+
+
+/* Hero section */
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.left-col {
+    width: 45%;
+}
+
+.right-col {
+    flex-grow: 1; /* means that all the elements in the right col get the same percentage of space available */
+}
+
+h1 {
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    margin: 0;
+}
+
+.subhead {
+    font-size: 1.8rem;
+}
+
+.btns {
+    margin: 5em 0;
+}
+
+.btns, .secondary-btn {
+    display: flex;
+    gap: 2em;
+}
+
+.primary-btn {
+    background-color: #F1E2D1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em; /* white space on the inside of the button (container) */
+}
+
+.secondary-btn {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block; /* the elements take the available screen width */
+    padding: 1em 0;
+    align-items: center;
+}
+
+.news {
+    display: flex;
+    gap: 3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: 0.8em;
+    position: relative;
+}
+
+.news::before {
+    position: absolute;
+    content: "";
+    background: url('../images/confetti.svg');
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+p.employees {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+    line-height: 50%; /* to align the big 50K writing to the details */
+}
+
+p.details {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+
+/* right column */
+.right-col {
+    display: grid; /* if the items have to look like a grid (they have to be like 2*2 matrix or similar), we use the display grid. by default, it organizes them like rows */
+    gap: 2.3em;
+    grid-template-columns: auto auto; /* gives them the same width */
+    grid-template-areas:
+        "left right"
+        "left bottom"
+    ; /* to make the template with a left column (both left elements in the 2*2 grid have the same name, so they're the same element) and 2 elements in the right column, so that we have the top right and the bottom right elements who are different */
+}
+
+.card {
+    border-color: black;
+    border-style: solid;
+    border-radius: 0.8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 800ms;
+}
+
+.card-1 {
+    grid-area: left; /* that's the "left" element we were referring to in the right column grid-template-areas property */
+    position: relative;
+
+}
+
+.card-1::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: -30px;
+    pointer-events: none; /* it has no effect on the cursor, so that the link that's underneath it can still be clickable */
+}
+
+
+.card-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.6em;
+    width: 100%;
+    padding: 2em;
+    transition: transform 800ms;
+}
+
+.product-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+p.product-price {
+    font-size: 1.8rem;
+}
+
+.err-msg .conf-msg {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg-box {
+    display: flex;
+    grid-area: top;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .3em;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-msg {
+    background-color: #ffb5b5;
+}
+
+.confirmation-msg {
+    background-color: rgb(183, 255, 164);
+}
+
+.close-btn {
+    display: block;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: .4em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0.3em;
+    border: .1em solid black;
+    cursor: pointer;
+    background-color: rgb(138, 0, 0);
+    padding: auto; /* make a square */
+}
+
+.close {
+    font-weight: bold;
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: rgb(102, 0, 0);
+}
+
+.error {
+    background-color: #ffb5b5;
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+
+/* animations */
+nav ul li a:hover::before {
+    width: 35%;
+}
+
+.primary-btn:hover {
+    background: #E2D1BD;
+}
+
+
+.card:hover .card-details {
+    transform: translateY(-20px);
+}
+
+
+/* Intro animation */
+/*.overlay {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    } to {
+        transform: scaleY(0);
+    }
+}*/
+
+/*main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
+}*/
